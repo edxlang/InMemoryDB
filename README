@@ -20,7 +20,7 @@
 5. Call commit() method to commit the transaction.
     If the transaction is not in progress, it will raise an exception.
     If the transaction is in progress, it will commit the transaction and return the transaction data.
-v
+
 6. Call rollback() method to rollback the transaction.
     If the transaction is not in progress, it will raise an exception.
     If the transaction is in progress, it will rollback the transaction and return the transaction data.
