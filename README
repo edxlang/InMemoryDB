@@ -1,0 +1,34 @@
+# INSTALLATION
+
+1. Clone the repository from GitHub.
+2. Import InMemoryDB class into your project.
+3. Create an instance of InMemoryDB class.
+
+# RUNNING THE CLASS
+1. Create an instance of InMemoryDB class.
+2. Call begin_transaction() method to start a transaction.
+    If a transaction is already in progress, it will raise an exception.
+
+3. Call put() method to insert a key-value pair.
+    If the transaction is not in progress, it will raise an exception.
+    If the key already exists, the value will be updated.
+    If the key does not exist, a new key-value pair will be inserted.
+
+4. Call get() method to get the value of a key.
+    If the key does not exist in the transaction data, it will return `None`.
+
+5. Call commit() method to commit the transaction.
+    If the transaction is not in progress, it will raise an exception.
+    If the transaction is in progress, it will commit the transaction and return the transaction data.
+v
+6. Call rollback() method to rollback the transaction.
+    If the transaction is not in progress, it will raise an exception.
+    If the transaction is in progress, it will rollback the transaction and return the transaction data.
+
+### HOW TO MODIFY
+
+To modify the assignment, you should add the implementation of the class to the project.
+The user can use the class to perform database functions and manage transactions. Also, they
+should make some test cases as well
+
+
